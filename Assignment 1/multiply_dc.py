@@ -23,15 +23,22 @@ def div_conq(list1, list2):
         print(list2[i], "<--")
         # print (list2[0])
         if i % 2 != 0:
-            print(i,"=", "!=")
-        elif i % 2 == 0:
+            print(i,"=", "P1")
+            y += str(list2[i])
+            stlist.append(y)
+        if i % 2 == 0:
+            y = str(list2[i]) 
+            print(i,"0")
+            # stlist.append(y)
             continue
-            # print(i)
+    
+    for i in range(0, len(stlist)):
+        stlist[i] = int(stlist[i])
 
-            
-        print(i, "=", str(list2[i]))
 
+        print(i, "==p2", str(list2[i]))
 
+    print(stlist,"ST")
     # print(len(list1))
 
 
